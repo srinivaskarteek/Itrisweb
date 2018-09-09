@@ -1,0 +1,102 @@
+<!--The content below is only a placeholder and can be replaced.-->
+
+
+<div  style='margin-top: 6%'>
+<div style="text-align:center">
+  <h1 style="color: #4CAF50">
+    PLC CONVERTER
+  </h1>
+</div>
+<br/>
+<br/>
+<div class='row col-sm-12'>
+<div class='col-sm-2'>
+
+</div>
+<div class='col-sm-9'>
+<div class='row col-sm-12'>
+<div class='col-sm-10'>
+  <div class="input-group">
+    <input type="text" class="form-control" value={{file_1_name}} placeholder="Please select the file"  aria-describedby="basic-addon1">
+  </div>
+</div>
+<div class='col-sm-1'>
+  <button class='btn btn-file buttonstyle'>Browse
+    <input type="file" value={{file_1_name}} (change)='onFile1Click($event)'/>
+  </button>
+
+</div>
+</div>
+</div>
+<div class='col-sm-2'>
+
+</div>
+
+</div>
+<br/>
+<br/>
+<div class='row col-sm-12'>
+  <div class='col-sm-2'>
+
+  </div>
+  <div class='col-sm-9'>
+  <div class='row col-sm-12'>
+  <div class='col-sm-10'>
+    <div class="input-group">
+      <input type="text" class="form-control" value={{file_2_name}} placeholder="Please select the file"  aria-describedby="basic-addon1">
+    </div>
+  </div>
+  <div class='col-sm-1'>
+    <button class='btn btn-file buttonstyle'   >Browse
+      <input type="file" value={{file_2_name}} (change)='onFile2Click($event)' />
+    </button>
+  </div>
+  </div>
+  </div>
+  <div class='col-sm-2'>
+
+  </div>
+
+  </div>
+  <br/>
+  <br/>
+<div class='row col-sm-12'>
+  <div class='col-sm-4'>
+
+  </div>
+  <div class='col-sm-4'>
+    <div class='row'>
+        <div class='col-sm-2'>
+          </div>
+
+<div class='col-sm-2'>
+    <button  type="button" class='btn btn-default btn-lg buttonstyle' (click)='onAnalyseClick()' >Analyse</button>
+</div>
+<div class='col-sm-4'></div>
+<div class='col-sm-2'>
+    <button  type="button" class='btn btn-default  btn-lg buttonstyle' (click)='onConvertClick()' >Convert</button>
+</div>
+
+    <div class='col-sm-4'>
+
+    </div>
+</div>
+
+
+</div>
+</div>
+
+  <ngx-spinner
+  bdOpacity = 0.3
+  bdColor = "rgba(249,249,249,0.8)"
+  size = "default"
+  color = "#4CAF50"
+  type = "ball-spin-clockwise"
+  >
+  <p style="font-size: 20px; color: 4CAF50">Please Wait...</p>
+</ngx-spinner>
+
+</div>
+
+
+
